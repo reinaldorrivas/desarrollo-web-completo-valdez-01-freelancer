@@ -182,47 +182,64 @@
       <section>
         <h3>Contacto</h3>
 
-        <form action="javascript:void(0);">
-          <fieldset>Contáctenos llenando todos los campos</fieldset>
+        <form class="formulario" action="javascript:void(0);">
+          <fieldset>
+            <legend>Contáctenos llenando todos los campos</legend>
 
-          <div>
-            <label for="name">Nombre</label>
-            <input type="text" name="name" id="name" />
-          </div>
+            <div class="contenedor-campos">
+              <div class="campo">
+                <label for="name">Nombre</label>
+                <input
+                  class="input-base"
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Tu Nombre"
+                />
+              </div>
 
-          <div>
-            <label for="cellphone">Tu Teléfono</label>
-            <input type="tel" name="cellphone" id="cellphone" />
-          </div>
+              <div class="campo">
+                <label for="cellphone">Tu Teléfono</label>
+                <input
+                  class="input-base"
+                  type="tel"
+                  name="cellphone"
+                  id="cellphone"
+                  placeholder="Tu Teléfono"
+                />
+              </div>
 
-          <div>
-            <label for="user__email">Nombre</label>
-            <input type="email" name="email" id="user__email" />
-          </div>
+              <div class="campo">
+                <label for="user__email">Correo</label>
+                <input
+                  class="input-base"
+                  type="email"
+                  name="email"
+                  id="user__email"
+                  placeholder="Tu Email"
+                />
+              </div>
 
-          <div>
-            <label for="email">Nombre</label>
-            <input type="email" name="email" id="email" />
-          </div>
+              <div class="campo">
+                <label for="message">Mensaje</label>
+                <textarea
+                  class="input-base"
+                  name="message"
+                  id="message"
+                ></textarea>
+              </div>
+            </div>
 
-          <div>
-            <label for="message">Mensaje</label>
-            <textarea
-              name="message"
-              id="message"
-              cols="30"
-              rows="10"
-            ></textarea>
-          </div>
-
-          <div>
-            <input type="button" value="Enviar" />
-          </div>
+            <div class="flex alinear-derecha">
+              <input class="boton w-sm-100" type="button" value="Enviar" />
+            </div>
+          </fieldset>
         </form>
       </section>
+      <!-- END | Contáctenos -->
     </main>
 
-    <footer>
+    <footer class="footer">
       <p>Todos los derechos reservados. Rene Rivas, Freelancer</p>
     </footer>
   </body>
